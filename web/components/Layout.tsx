@@ -1,9 +1,29 @@
+import Head from 'next/head'
 import React from 'react'
+import Footer from './Footer'
+import Navbar from './Navbar'
 
-const Layout = () => {
+
+
+const Layout = ({children}:any) => {
     return (
-        <div>
-            
+        <div className="layout">
+            <Head>
+                <title>Project Ecommerce Store</title>
+            </Head>
+
+            <header>
+                <Navbar />
+            </header>
+
+            <main>
+                {children}
+            </main>
+
+            <footer>
+                
+                
+            </footer>
         </div>
     )
 }
