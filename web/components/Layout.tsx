@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import React from 'react'
 import Footer from './Footer'
+import MainFooter from './MainFooter'
 import Navbar from './Navbar'
 
 
@@ -21,7 +22,7 @@ const Layout = ({children}:any) => {
             </main>
 
             <footer>
-                
+                <MainFooter />
                 
             </footer>
         </div>
